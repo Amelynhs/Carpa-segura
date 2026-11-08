@@ -1,0 +1,14 @@
+{
+  "name": "backend-auth",
+  "version": "1.0.0",
+  "description": "Backend ligero de autenticación: OAuth 2.0 + PKCE, refresh rotatorio, Step-Up TOTP y Anti-Replay. Sin dependencias externas.",
+  "type": "module",
+  "main": "src/start.js",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/start.js",
+    "dev": "node --watch src/start.js",
+    "test": "node --test test/*.test.js"
+  },
+  "license": "MIT"
+}

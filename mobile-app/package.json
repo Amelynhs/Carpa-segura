@@ -1,0 +1,35 @@
+{
+  "name": "unisabana-secure-lab",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "dev-client": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --no-warnings --test test/*.test.ts"
+  },
+  "dependencies": {
+    "expo": "~58.0.0",
+    "expo-build-properties": "*",
+    "expo-camera": "*",
+    "expo-constants": "*",
+    "expo-crypto": "*",
+    "expo-haptics": "*",
+    "expo-linear-gradient": "*",
+    "expo-linking": "*",
+    "expo-secure-store": "*",
+    "expo-status-bar": "*",
+    "expo-web-browser": "*",
+    "react": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-safe-area-context": "*",
+    "react-native-svg": "15.16.0"
+  },
+  "devDependencies": {
+    "@types/react": "*",
+    "typescript": "~6.0.3"
+  }
+}

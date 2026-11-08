@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "La Carpa Segura",
+    "slug": "unisabana-secure-lab",
+    "version": "1.0.0",
+    "scheme": "unisabana-auth",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "bundleIdentifier": "co.edu.unisabana.carpasegura",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "La cámara se usa solo para leer el código QR de tu segundo factor (TOTP).",
+        "NSAppTransportSecurity": { "NSAllowsLocalNetworking": true }
+      }
+    },
+    "android": {
+      "package": "co.edu.unisabana.carpasegura",
+      "permissions": ["CAMERA"]
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-web-browser",
+      ["expo-camera", { "cameraPermission": "La cámara se usa solo para leer el código QR de tu segundo factor (TOTP)." }],
+      ["expo-build-properties", { "android": { "usesCleartextTraffic": true } }]
+    ]
+  }
+}
